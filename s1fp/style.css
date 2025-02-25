@@ -104,3 +104,65 @@ a {
     color: rgba(0, 0, 0, 0.6);
     text-align: right;
 }
+
+.bottom-center {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+:root {
+    --webring-size: 50px;
+}
+
+.smallimage{
+    width: var(--webring-size);
+}
+
+#defaultw {
+    position: absolute;
+    clip-path: polygon(10% 10%, 50% 0%, 50% 100%, 10% 90%, 0% 50%);
+}
+
+#defaultR {
+    position: absolute;
+    clip-path: polygon(50% 0%, 90% 10%, 100% 50%, 90% 90%, 50% 100%);
+}
+
+.hoverW {
+    opacity: 0;
+    width: var(--webring-size);
+    position: absolute;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
+.hoverR {
+    opacity: 0;
+    width: var(--webring-size);
+    position: absolute;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
+#defaultw:hover~.hoverW {
+    opacity: 1;
+}
+
+#defaultR:hover~.hoverR {
+    opacity: 1;
+}
+
+#WR_container_wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: var(--webring-size);
+    height: var(--webring-size);
+    z-index: 1000;
+    padding: 10px;
+}
