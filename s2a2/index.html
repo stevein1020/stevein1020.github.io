@@ -27,7 +27,7 @@
                     <li>I like to start with</li>
                     <li class="my-move">1. e4</li>
 
-                    <li>And you'll usually play:</li>
+                    <li>2 common responses:</li>
                     <li class="user-moves">
                         <label for="w-e4e5">1... e5</label>
                         <p>or</p>
@@ -36,9 +36,9 @@
 
                     <input type="radio" id="w-e4e5" name="1">
                     <ul>
-                        <li>Follow up!</li>
+                        <li>Boring...</li>
                         <li class="my-move">2. Nf3</li>
-                        <li>Your turn:</li>
+                        <li>Pick again:</li>
                         <li class="user-moves">
                             <label for="w-e4e5nf3nc6">2... Nc6</label>
                             <p>or</p>
@@ -47,9 +47,9 @@
 
                         <input type="radio" id="w-e4e5nf3nc6" name="2">
                         <ul>
-                            <li>Final move:</li>
+                            <li>Alright, I like this game again.</li>
                             <li class="my-move">3. Nc3</li>
-                            <li>One last time:</li>
+                            <li>Choose carefully...</li>
                             <li class="user-moves">
                                 <label for="w-e4e5nf3nc6nc3nf6">3... Nf6</label>
                                 <p>or</p>
@@ -58,20 +58,26 @@
 
                             <input type="radio" id="w-e4e5nf3nc6nc3nf6" name="4">
                             <ul>
-                                <img src="assets/four-knights.png" alt="">
+                                <li>Good choice!</li>
+                                <div class="chessboard">
+                                    <img src="assets/four-knights.png" alt="">
+                                </div>
                             </ul>
 
                             <input type="radio" id="w-e4e5nf3nc6nc3bc5" name="4">
                             <ul>
-                                <img src="assets/three-knights-bc5.png" alt="">
+                                <li>Oops! Nxe5 is coming.</li>
+                                <div class="chessboard">
+                                    <img src="assets/three-knights-bc5.png" alt="">
+                                </div>
                             </ul>
                         </ul>
 
                         <input type="radio" id="w-e4e5nf3d6" name="2">
                         <ul>
-                            <li>Final move:</li>
+                            <li>Hm! It's time to blow the center up.</li>
                             <li class="my-move">3. d4</li>
-                            <li>One last time:</li>
+                            <li>What will you do?</li>
                             <li class="user-moves">
                                 <label for="w-e4e5nf3d6d4exd4">3... exd4</label>
                                 <p>or</p>
@@ -80,28 +86,34 @@
 
                             <input type="radio" id="w-e4e5nf3d6d4exd4" name="4">
                             <ul>
-                                <img src="assets/philidor-exchange.png" alt="">
+                                <li>The exchange. Classy.</li>
+                                <div class="chessboard">
+                                    <img src="assets/philidor-exchange.png" alt="">
+                                </div>
                             </ul>
 
                             <input type="radio" id="w-e4e5nf3d6d4bg4" name="4">
                             <ul>
-                                <img src="assets/philidor-bg4.png" alt="">
+                                <li>Queens are coming off the board...</li>
+                                <div class="chessboard">
+                                    <img src="assets/philidor-bg4.png" alt="">
+                                </div>
                             </ul>
                         </ul>
                     </ul>
 
                     <input type="radio" id="w-e4c5" name="1">
                     <ul>
-                        <li>Follow up!</li>
+                        <li>The Sicilian! Bold choice.</li>
                         <li class="my-move">2. Nf3</li>
-                        <li>Your turn:</li>
+                        <li>Apples or oranges?</li>
                         <li class="user-moves"><label for="w-e4c5nf3nc6">2... Nc6</label><label for="w-e4c5nf3d6">2... d6</label></li>
 
                         <input type="radio" id="w-e4c5nf3nc6" name="2">
                         <ul>
-                            <li>Final move:</li>
+                            <li>I'm more scared of this one.</li>
                             <li class="my-move">3. d4</li>
-                            <li>One last time:</li>
+                            <li>Two roads diverge...</li>
                             <li class="user-moves">
                                 <label for="w-e4c5nf3nc6d4cxd4">3... cxd4</label>
                                 <p>or</p>
@@ -110,19 +122,25 @@
 
                             <input type="radio" id="w-e4c5nf3nc6d4cxd4" name="4">
                             <ul>
-                                <img src="assets/sicilian-open-nc6.png" alt="">
+                                <li>This one's well-trodden.</li>
+                                <div class="chessboard">
+                                    <img src="assets/sicilian-open-nc6.png" alt="">
+                                </div>
                             </ul>
 
                             <input type="radio" id="w-e4c5nf3nc6d4e6" name="4">
                             <ul>
-                                <img src="assets/sicilian-open-e6.png" alt="">
+                                <li>The one less traveled.</li>
+                                <div class="chessboard">
+                                    <img src="assets/sicilian-open-e6.png" alt="">
+                                </div>
                             </ul>
                         </ul>
                         <input type="radio" id="w-e4c5nf3d6" name="2">
                         <ul>
-                            <li>Final move:</li>
+                            <li>Good, classic Sicilian.</li>
                             <li class="my-move">3. d4</li>
-                            <li>One last time:</li>
+                            <li>What do you do?</li>
                             <li class="user-moves">
                                 <label for="w-e4c5nf3d6d4cxd4">3... cxd4</label>
                                 <p>or</p>
@@ -131,12 +149,18 @@
 
                             <input type="radio" id="w-e4c5nf3d6d4cxd4" name="4">
                             <ul>
-                                <img src="assets/sicilian-open.png" alt="">
+                                <li>My favorite flavor.</li>
+                                <div class="chessboard">
+                                    <img src="assets/sicilian-open.png" alt="">
+                                </div>
                             </ul>
 
                             <input type="radio" id="w-e4c5nf3d6d4b6" name="4">
                             <ul>
-                                <img src="assets/sicilian-open-b6.png" alt="">
+                                <li>Buckle up!</li>
+                                <div class="chessboard">
+                                    <img src="assets/sicilian-open-b6.png" alt="">
+                                </div>
                             </ul>
                         </ul>
                     </ul>
