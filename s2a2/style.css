@@ -1,0 +1,118 @@
+/* clear default styling */
+input {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, p {
+  margin: 0;
+}
+
+/* heading text and intro styling */
+body {
+  font-family: monospace;
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 1.5rem 0.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+p:has(~ nav > input:nth-of-type(1):checked):nth-of-type(6) label {
+  font-weight: bold;
+}
+
+p:has(~ nav > input:nth-of-type(2):checked):nth-of-type(8) label {
+  font-weight: bold;
+}
+
+/* opening moves styling */
+nav {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav > ul > li:nth-of-type(1) {
+  margin-top: 1rem;
+}
+
+ul > li:nth-of-type(2n + 1) {
+  margin: 0.5rem 1rem;
+}
+
+.my-move {
+  display: flex;
+  justify-content: center;
+
+  font-weight: bold;
+
+  margin: 1rem 0;
+}
+
+.user-moves {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin: 1rem 0;
+}
+
+.user-moves:has(~ input:nth-of-type(1):checked) > label:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.user-moves:has(~ input:nth-of-type(2):checked) > label:nth-of-type(2) {
+  font-weight: bold;
+}
+
+input + ul {
+  max-height: 0;
+  overflow: hidden;
+}
+
+input:checked + ul {
+  max-height: 150vh;
+}
+
+input:checked + ul:has(> img) {
+  box-sizing: border-box;
+  padding: 10%;
+}
+
+input:checked + ul > .chessboard {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  box-sizing: border-box;
+  padding: 10%;
+}
+
+label {
+  cursor: pointer;
+}
+

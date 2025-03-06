@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>pawns</title>
+    </head>
+    <body>
+        <main>
+            <h1>pawns</h1>
+            <p>I made my chess.com account on</p>
+            <p class="center-text"><a href="https://www.chess.com/member/steven_knight">May 1, 2015</a>.</p>
+
+            <p>As of Mar. 6, 2025 I've played</p>
+            <p class="center-text"><a href="https://www.chess.com/games/archive/steven_knight">2,775 games of chess</a>.</p>
+
+            <p>In 1,389 of those games, I was</p>
+            <p class="center-text"><label for="w"><u>white</u></label>.</p>
+
+            <p>For the remaining 1,386, I was</p>
+            <p class="center-text"><label for="b"><u>black</u></label>.</p>
+
+            <nav>
+                <input type="radio" id="w" name="0">
+                <ul>
+                    <li>I like to start with</li>
+                    <li class="my-move">1. e4</li>
+
+                    <li>And you'll usually play:</li>
+                    <li class="user-moves">
+                        <label for="w-e4e5">1... e5</label>
+                        <p>or</p>
+                        <label for="w-e4c5">1... c5</label>
+                    </li>
+
+                    <input type="radio" id="w-e4e5" name="1">
+                    <ul>
+                        <li>Follow up!</li>
+                        <li class="my-move">2. Nf3</li>
+                        <li>Your turn:</li>
+                        <li class="user-moves">
+                            <label for="w-e4e5nf3nc6">2... Nc6</label>
+                            <p>or</p>
+                            <label for="w-e4e5nf3d6">2... d6</label>
+                        </li>
+
+                        <input type="radio" id="w-e4e5nf3nc6" name="2">
+                        <ul>
+                            <li>Final move:</li>
+                            <li class="my-move">3. Nc3</li>
+                            <li>One last time:</li>
+                            <li class="user-moves">
+                                <label for="w-e4e5nf3nc6nc3nf6">3... Nf6</label>
+                                <p>or</p>
+                                <label for="w-e4e5nf3nc6nc3bc5">3... Bc5</label>
+                            </li>
+
+                            <input type="radio" id="w-e4e5nf3nc6nc3nf6" name="4">
+                            <ul>
+                                <img src="assets/four-knights.png" alt="">
+                            </ul>
+
+                            <input type="radio" id="w-e4e5nf3nc6nc3bc5" name="4">
+                            <ul>
+                                <img src="assets/three-knights-bc5.png" alt="">
+                            </ul>
+                        </ul>
+
+                        <input type="radio" id="w-e4e5nf3d6" name="2">
+                        <ul>
+                            <li>Final move:</li>
+                            <li class="my-move">3. d4</li>
+                            <li>One last time:</li>
+                            <li class="user-moves">
+                                <label for="w-e4e5nf3d6d4exd4">3... exd4</label>
+                                <p>or</p>
+                                <label for="w-e4e5nf3d6d4bg4">3... Bg4</label>
+                            </li>
+
+                            <input type="radio" id="w-e4e5nf3d6d4exd4" name="4">
+                            <ul>
+                                <img src="assets/philidor-exchange.png" alt="">
+                            </ul>
+
+                            <input type="radio" id="w-e4e5nf3d6d4bg4" name="4">
+                            <ul>
+                                <img src="assets/philidor-bg4.png" alt="">
+                            </ul>
+                        </ul>
+                    </ul>
+
+                    <input type="radio" id="w-e4c5" name="1">
+                    <ul>
+                        <li>Follow up!</li>
+                        <li class="my-move">2. Nf3</li>
+                        <li>Your turn:</li>
+                        <li class="user-moves"><label for="w-e4c5nf3nc6">2... Nc6</label><label for="w-e4c5nf3d6">2... d6</label></li>
+
+                        <input type="radio" id="w-e4c5nf3nc6" name="2">
+                        <ul>
+                            <li>Final move:</li>
+                            <li class="my-move">3. d4</li>
+                            <li>One last time:</li>
+                            <li class="user-moves">
+                                <label for="w-e4c5nf3nc6d4cxd4">3... cxd4</label>
+                                <p>or</p>
+                                <label for="w-e4c5nf3nc6d4e6">3... e6</label>
+                            </li>
+
+                            <input type="radio" id="w-e4c5nf3nc6d4cxd4" name="4">
+                            <ul>
+                                <img src="assets/sicilian-open-nc6.png" alt="">
+                            </ul>
+
+                            <input type="radio" id="w-e4c5nf3nc6d4e6" name="4">
+                            <ul>
+                                <img src="assets/sicilian-open-e6.png" alt="">
+                            </ul>
+                        </ul>
+                        <input type="radio" id="w-e4c5nf3d6" name="2">
+                        <ul>
+                            <li>Final move:</li>
+                            <li class="my-move">3. d4</li>
+                            <li>One last time:</li>
+                            <li class="user-moves">
+                                <label for="w-e4c5nf3d6d4cxd4">3... cxd4</label>
+                                <p>or</p>
+                                <label for="w-e4c5nf3d6d4b6">3... b6</label>
+                            </li>
+
+                            <input type="radio" id="w-e4c5nf3d6d4cxd4" name="4">
+                            <ul>
+                                <img src="assets/sicilian-open.png" alt="">
+                            </ul>
+
+                            <input type="radio" id="w-e4c5nf3d6d4b6" name="4">
+                            <ul>
+                                <img src="assets/sicilian-open-b6.png" alt="">
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+
+                <input type="radio" id="b" name="0">
+                <ul>
+                    <li>This means you get to start.</li>
+                    <li class="user-moves">
+                        <label for="b-e4">1. e4</label>
+                        <p>or</p>
+                        <label for="b-d4">1. d4</label>
+                    </li>
+
+                    <input type="radio" id="b-e4" name="1">
+                    <ul>
+                        <li>I'll gladly respond with</li>
+                        <li class="my-move">1... e5</li>
+                        <li>Now you:</li>
+                        <li class="user-moves">
+                            <label for="b-e4e5nf3">2. Nf3</label>
+                            <p>or</p>
+                            <label for="b-e4e5bc4">2. Bc4</label>
+                        </li>
+
+                        <input type="radio" id="b-e4e5nf3" name="2">
+                        <ul>
+                            <li>Here, I like</li>
+                            <li class="my-move">2... Nc6</li>
+                            <li>Final move:</li>
+                            <li class="user-moves">
+                                <label for="b-e4e5nf3nc6bc4">3. Bc4</label>
+                                <label for="b-e4e5nf3nc6bc5">3. Bb5</label>
+                            </li>
+
+                            <input type="radio" id="b-e4e5nf3nc6bc4" name="3">
+                            <ul>
+                                <li>Nice!</li>
+                                <li class="my-move">3... Nf6</li>
+                                <div class="chessboard">
+                                    <img src="assets/italian-two-knights.png" alt="">
+                                </div>
+                            </ul>
+
+                            <input type="radio" id="b-e4e5nf3nc6bc5" name="3">
+                            <ul>
+                                <li>Nice!</li>
+                                <li class="my-move">3... Nf6</li>
+                                <div class="chessboard">
+                                    <img src="assets/berlin.png" alt="">
+                                </div>
+                            </ul>
+                        </ul> 
+
+                        <input type="radio" id="b-e4e5bc4" name="2">
+                        <ul>
+                            <li>Here, I like</li>
+                            <li class="my-move">2... Nc6</li> 
+                            <li>Final move:</li>
+                            <li class="user-moves">
+                                <label for="b-e4e5bc4nc6nf3">3. Nf3</label>
+                                <p>or</p>
+                                <label for="b-e4e5bc4nc6c3">3. c3</label>
+                            </li>
+
+                            <input type="radio" id="b-e4e5bc4nc6nf3" name="3">
+                            <ul>
+                                <li>Nice!</li>
+                                <li class="my-move">3... Nf6</li>
+                                <div class="chessboard">
+                                    <img src="assets/italian-two-knights.png" alt="">
+                                </div>
+                            </ul>
+
+                            <input type="radio" id="b-e4e5bc4nc6c3" name="3">
+                            <ul>
+                                <li class="my-move">3... Nf6</li>
+                                <div class="chessboard">
+                                    <img src="assets/bishops-opening.png" alt="">
+                                </div>
+                            </ul>
+                        </ul>
+                    </ul>
+
+                    <input type="radio" id="b-d4" name="1">
+                    <ul>
+                        <li>I'll gladly respond with</li>
+                        <li class="my-move">1... d5</li>
+                        <li>Now you:</li>
+                        <li class="user-moves">
+                            <label for="b-d4d5c4">2. c4</label>
+                            <p>or</p>
+                            <label for="b-d4d5e3">2. e3</label>
+                        </li>
+
+                        <input type="radio" id="b-d4d5c4" name="2">
+                        <ul>
+                            <li>Here, I like</li>
+                            <li class="my-move">2... c6</li>
+                            <li>Final move:</li>
+                            <li class="user-moves">
+                                <label for="b-d4d5c4c6Nc3">3. Nc3</label>
+                                <p>or</p>
+                                <label for="b-d4d5c4c6e3">3. e3</label>
+                            </li>
+
+                            <input type="radio" id="b-d4d5c4c6Nc3" name="3">
+                            <ul>
+                                <li>Nice!</li>
+                                <li class="my-move">3... Nf6</li>
+                                <div class="chessboard">
+                                    <img src="assets/slav.png" alt="">
+                                </div>
+                            </ul>
+
+                            <input type="radio" id="b-d4d5c4c6e3" name="3">
+                            <ul>
+                                <li>Nice!</li>
+                                <li class="my-move">3... Nf6</li>
+                                <div class="chessboard">
+                                    <img src="assets/slav-e3.png" alt="">
+                                </div>
+                            </ul>
+                        </ul>
+
+                        <input type="radio" id="b-d4d5e3" name="2">
+                        <ul>
+                            <li>Here, I like</li>
+                            <li class="my-move">2... Nc6</li>
+                            <li>Final move:</li>
+                            <li class="user-moves">
+                                <label for="b-d4d5e3nc6nf3">3. Nf3</label>
+                                <p>or</p>
+                                <label for="b-d4d5e3nc6a3">3. a3</label>
+                            </li>
+
+                            <input type="radio" id="b-d4d5e3nc6nf3" name="3">
+                            <ul>
+                                <li>Nice!</li>
+                                <li class="my-move">3... Nf6</li>
+                                <div class="chessboard">
+                                    <img src="assets/queens-pawn-three-knights.png" alt="">
+                                </div>
+                            </ul>
+
+                            <input type="radio" id="b-d4d5e3nc6a3" name="3">
+                            <ul>
+                                <li>Nice!</li>
+                                <li class="my-move">3... e6</li>
+                                <div class="chessboard">
+                                    <img src="assets/queens-pawn.png" alt="">
+                                </div>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </nav>
+        </main>
+</body>
+</html>
