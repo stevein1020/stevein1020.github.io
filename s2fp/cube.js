@@ -753,6 +753,9 @@ export default class Cube {
     else if (move === "B") this.B();
     else if (move === "B'") this.Bp();
     else if (move === "B2") this.B2();
+    else if (move === "M") this.M();
+    else if (move === "M'") this.Mp();
+    else if (move === "M2") this.M2();
     else console.error(`Unknown move: ${move}`);
   }
 
