@@ -676,43 +676,4 @@ export default class Cube {
   applyMoves(moves) {
     moves.forEach(applyMove)
   }
-  
-  /**
-   * Draws the Front (F) face of the cube
-   * @param {number} x - x position to start drawing
-   * @param {number} y - y position to start drawing
-   * @param {number} size - total size of the face
-   */
-  drawFrontFace(x, y, size) {
-    const cellSize = size / 3;
-    const colors = [
-      color(255),             // 0: white (Up)
-      color(255, 0, 0),       // 1: red (Right)
-      color(0, 255, 0),       // 2: green (Front)
-      color(255, 255, 0),     // 3: yellow (Down)
-      color(255, 165, 0),     // 4: orange (Left)
-      color(0, 0, 255)        // 5: blue (Back)
-    ];
-
-    // Front face starts at index 18
-    const fStartIndex = 18;
-    
-    // Draw the 3x3 grid of the Front face
-    for (let row = 0; row < 3; row++) {
-      for (let col = 0; col < 3; col++) {
-        const index = row * 3 + col;
-        const colorIndex = this.stickers[fStartIndex + index];
-        
-        // Calculate position of this cell
-        const cellX = x + col * cellSize;
-        const cellY = y + row * cellSize;
-        
-        // Draw sticker
-        fill(colors[colorIndex]);
-        stroke(0);
-        strokeWeight(2);
-        rect(cellX, cellY, cellSize, cellSize);
-      }
-    }
-  }
 }
