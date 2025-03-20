@@ -731,6 +731,222 @@ export default class Cube {
     this.M();
   }
 
+  E() {
+    // Rotate the middle slice between U and D in the same direction as D
+    // Save affected stickers
+    const f3 = this.stickers[21];
+    const f4 = this.stickers[22];
+    const f5 = this.stickers[23];
+
+    const r3 = this.stickers[12];
+    const r4 = this.stickers[13];
+    const r5 = this.stickers[14];
+
+    const b3 = this.stickers[48];
+    const b4 = this.stickers[49];
+    const b5 = this.stickers[50];
+
+    const l3 = this.stickers[39];
+    const l4 = this.stickers[40];
+    const l5 = this.stickers[41];
+
+    // F -> R (E slice follows the same direction as D)
+    this.stickers[12] = f3;
+    this.stickers[13] = f4;
+    this.stickers[14] = f5;
+
+    // R -> B
+    this.stickers[48] = r3;
+    this.stickers[49] = r4;
+    this.stickers[50] = r5;
+
+    // B -> L
+    this.stickers[39] = b3;
+    this.stickers[40] = b4;
+    this.stickers[41] = b5;
+
+    // L -> F
+    this.stickers[21] = l3;
+    this.stickers[22] = l4;
+    this.stickers[23] = l5;
+  }
+
+  Ep() {
+    // Rotate the middle slice between U and D in the same direction as D'
+    // Save affected stickers
+    const f3 = this.stickers[21];
+    const f4 = this.stickers[22];
+    const f5 = this.stickers[23];
+
+    const r3 = this.stickers[12];
+    const r4 = this.stickers[13];
+    const r5 = this.stickers[14];
+
+    const b3 = this.stickers[48];
+    const b4 = this.stickers[49];
+    const b5 = this.stickers[50];
+
+    const l3 = this.stickers[39];
+    const l4 = this.stickers[40];
+    const l5 = this.stickers[41];
+
+    // F -> L (E slice follows the same direction as D')
+    this.stickers[39] = f3;
+    this.stickers[40] = f4;
+    this.stickers[41] = f5;
+
+    // L -> B
+    this.stickers[48] = l3;
+    this.stickers[49] = l4;
+    this.stickers[50] = l5;
+
+    // B -> R
+    this.stickers[12] = b3;
+    this.stickers[13] = b4;
+    this.stickers[14] = b5;
+
+    // R -> F
+    this.stickers[21] = r3;
+    this.stickers[22] = r4;
+    this.stickers[23] = r5;
+  }
+
+  E2() {
+    this.E();
+    this.E();
+  }
+
+  S() {
+    // Rotate the middle slice between F and B in the same direction as F
+    // Save affected stickers
+    const u3 = this.stickers[3];
+    const u4 = this.stickers[4];
+    const u5 = this.stickers[5];
+
+    const r1 = this.stickers[10];
+    const r4 = this.stickers[13];
+    const r7 = this.stickers[16];
+
+    const d3 = this.stickers[30];
+    const d4 = this.stickers[31];
+    const d5 = this.stickers[32];
+
+    const l1 = this.stickers[37];
+    const l4 = this.stickers[40];
+    const l7 = this.stickers[43];
+
+    // U -> R (S follows F direction)
+    this.stickers[10] = u3;
+    this.stickers[13] = u4;
+    this.stickers[16] = u5;
+
+    // R -> D (with orientation change)
+    this.stickers[32] = r1;
+    this.stickers[31] = r4;
+    this.stickers[30] = r7;
+
+    // D -> L (no orientation change)
+    this.stickers[37] = d3;
+    this.stickers[40] = d4;
+    this.stickers[43] = d5;
+
+    // L -> U (with orientation change)
+    this.stickers[3] = l7;
+    this.stickers[4] = l4;
+    this.stickers[5] = l1;
+  }
+
+  Sp() {
+    // Rotate the middle slice between F and B in the same direction as F'
+    // Save affected stickers
+    const u3 = this.stickers[3];
+    const u4 = this.stickers[4];
+    const u5 = this.stickers[5];
+
+    const r1 = this.stickers[10];
+    const r4 = this.stickers[13];
+    const r7 = this.stickers[16];
+
+    const d3 = this.stickers[30];
+    const d4 = this.stickers[31];
+    const d5 = this.stickers[32];
+
+    const l1 = this.stickers[37];
+    const l4 = this.stickers[40];
+    const l7 = this.stickers[43];
+
+    // U -> L (S' follows F' direction)
+    this.stickers[37] = u5;
+    this.stickers[40] = u4;
+    this.stickers[43] = u3;
+
+    // L -> D (no orientation change)
+    this.stickers[30] = l1;
+    this.stickers[31] = l4;
+    this.stickers[32] = l7;
+
+    // D -> R (with orientation change)
+    this.stickers[10] = d5;
+    this.stickers[13] = d4;
+    this.stickers[16] = d3;
+
+    // R -> U (with orientation change)
+    this.stickers[3] = r1;
+    this.stickers[4] = r4;
+    this.stickers[5] = r7;
+  }
+
+  S2() {
+    this.S();
+    this.S();
+  }
+
+  x() {
+    this.R();   // Right face clockwise
+    this.Mp();  // Middle slice counterclockwise (follows L' direction)
+    this.Lp();  // Left face counterclockwise
+  }
+
+  xp() {
+    this.Rp();  // Right face counterclockwise
+    this.M();   // Middle slice clockwise (follows L direction)
+    this.L();   // Left face clockwise
+  }
+
+  y() {
+    this.U();   // Up face clockwise
+    this.Ep();  // E slice counterclockwise (follows D' direction)
+    this.Dp();  // Down face counterclockwise
+  }
+
+  yp() {
+    this.Up();  // Up face counterclockwise
+    this.E();   // E slice clockwise (follows D direction)
+    this.D();   // Down face clockwise
+  }
+
+  y2() {
+    this.y();
+    this.y();
+  }
+
+  z() {
+    this.F();   // Front face clockwise
+    this.S();   // S slice clockwise (follows F direction)
+    this.Bp();  // Back face counterclockwise
+  }
+
+  zp() {
+    this.Fp();  // Front face counterclockwise
+    this.Sp();  // S slice counterclockwise (follows F' direction)
+    this.B();   // Back face clockwise
+  }
+
+  z2() {
+    this.z();
+    this.z();
+  }
+
   /**
     * Apply a move given as a string
     */
@@ -756,6 +972,21 @@ export default class Cube {
     else if (move === "M") this.M();
     else if (move === "M'") this.Mp();
     else if (move === "M2") this.M2();
+    else if (move === "E") this.E();
+    else if (move === "E'") this.Ep();
+    else if (move === "E2") this.E2();
+    else if (move === "S") this.S();
+    else if (move === "S'") this.Sp();
+    else if (move === "S2") this.S2();
+    else if (move === "x") this.x();
+    else if (move === "x'") this.xp();
+    else if (move === "x2") this.x2();
+    else if (move === "y") this.y();
+    else if (move === "y'") this.yp();
+    else if (move === "y2") this.y2();
+    else if (move === "z") this.z();
+    else if (move === "z'") this.zp();
+    else if (move === "z2") this.z2();
     else console.error(`Unknown move: ${move}`);
   }
 
