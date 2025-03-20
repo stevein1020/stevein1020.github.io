@@ -913,6 +913,11 @@ export default class Cube {
     this.L();   // Left face clockwise
   }
 
+  x2() {
+    this.x();
+    this.x();
+  }
+
   y() {
     this.U();   // Up face clockwise
     this.Ep();  // E slice counterclockwise (follows D' direction)
