@@ -297,9 +297,9 @@ export default class Cube {
 
     // Update the stickers
     // Up -> Right
-    this.stickers[9] = u8;
+    this.stickers[9] = u6;
     this.stickers[12] = u7;
-    this.stickers[15] = u6;
+    this.stickers[15] = u8;
 
     // Right -> Down
     this.stickers[27] = r6;
@@ -307,14 +307,14 @@ export default class Cube {
     this.stickers[29] = r0;
 
     // Down -> Left
-    this.stickers[38] = d2;
+    this.stickers[38] = d0;
     this.stickers[41] = d1;
-    this.stickers[44] = d0;
+    this.stickers[44] = d2;
 
     // Left -> Up
-    this.stickers[6] = l2;
+    this.stickers[6] = l8;
     this.stickers[7] = l5;
-    this.stickers[8] = l8;
+    this.stickers[8] = l2;
   }
 
   Fp() {
@@ -340,24 +340,24 @@ export default class Cube {
 
     // Update the stickers
     // Up -> Left
-    this.stickers[38] = u6;
+    this.stickers[38] = u8;
     this.stickers[41] = u7;
-    this.stickers[44] = u8;
+    this.stickers[44] = u6;
 
     // Right -> Up
-    this.stickers[6] = r6;
+    this.stickers[6] = r0;
     this.stickers[7] = r3;
-    this.stickers[8] = r0;
+    this.stickers[8] = r6;
 
     // Down -> Right
-    this.stickers[9] = d0;
+    this.stickers[9] = d2;
     this.stickers[12] = d1;
-    this.stickers[15] = d2;
+    this.stickers[15] = d0;
 
     // Left -> Down
-    this.stickers[27] = l8;
+    this.stickers[27] = l2;
     this.stickers[28] = l5;
-    this.stickers[29] = l2;
+    this.stickers[29] = l8;
   }
 
   F2() {
