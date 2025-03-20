@@ -388,9 +388,9 @@ export default class Cube {
 
     // Update the stickers
     // Up -> Left
-    this.stickers[36] = u0;
+    this.stickers[36] = u2;
     this.stickers[39] = u1;
-    this.stickers[42] = u2;
+    this.stickers[42] = u0;
 
     // Right -> Up
     this.stickers[0] = r2;
@@ -441,9 +441,9 @@ export default class Cube {
     this.stickers[33] = r8;
 
     // Down -> Left
-    this.stickers[36] = d8;
+    this.stickers[36] = d6;
     this.stickers[39] = d7;
-    this.stickers[42] = d6;
+    this.stickers[42] = d8;
 
     // Left -> Up
     this.stickers[0] = l6;
