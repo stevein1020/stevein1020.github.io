@@ -901,6 +901,96 @@ export default class Cube {
     this.S();
   }
 
+  Rw() {
+    this.L();
+    this.x();
+  }
+
+  Rwp() {
+    this.Lp();
+    this.xp();
+  }
+
+  Rw2() {
+    this.L2();
+    this.x2();
+  }
+
+  Lw() {
+    this.R();
+    this.xp();
+  }
+
+  Lwp() {
+    this.Rp();
+    this.x();
+  }
+
+  Lw2() {
+    this.R2();
+    this.x2();
+  }
+
+  Uw() {
+    this.D();
+    this.y();
+  }
+
+  Uwp() {
+    this.Dp();
+    this.yp();
+  }
+
+  Uw2() {
+    this.D2();
+    this.y2();
+  }
+
+  Dw() {
+    this.U();
+    this.yp();
+  }
+
+  Dwp() {
+    this.Up();
+    this.y();
+  }
+
+  Dw2() {
+    this.U2();
+    this.y2();
+  }
+
+  Fw() {
+    this.B();
+    this.z();
+  }
+
+  Fwp() {
+    this.Bp();
+    this.zp();
+  }
+
+  Fw2() {
+    this.B2();
+    this.z2();
+  }
+
+  Bw() {
+    this.F();
+    this.zp();
+  }
+
+  Bwp() {
+    this.Fp();
+    this.z();
+  }
+
+  Bw2() {
+    this.F2();
+    this.z2();
+  }
+
   x() {
     this.R();   // Right face clockwise
     this.Mp();  // Middle slice counterclockwise (follows L' direction)
@@ -983,6 +1073,24 @@ export default class Cube {
     else if (move === "S") this.S();
     else if (move === "S'") this.Sp();
     else if (move === "S2") this.S2();
+    else if (move === "Rw") this.Rw();
+    else if (move === "Rw'") this.Rwp();
+    else if (move === "Rw2") this.Rw2();
+    else if (move === "Lw") this.Lw();
+    else if (move === "Lw'") this.Lwp();
+    else if (move === "Lw2") this.Lw2();
+    else if (move === "Uw") this.Uw();
+    else if (move === "Uw'") this.Uwp();
+    else if (move === "Uw2") this.Uw2();
+    else if (move === "Dw") this.Dw();
+    else if (move === "Dw'") this.Dwp();
+    else if (move === "Dw2") this.Dw2();
+    else if (move === "Fw") this.Fw();
+    else if (move === "Fw'") this.Fwp();
+    else if (move === "Fw2") this.Fw2();
+    else if (move === "Bw") this.Bw();
+    else if (move === "Bw'") this.Bwp();
+    else if (move === "Bw2") this.Bw2();
     else if (move === "x") this.x();
     else if (move === "x'") this.xp();
     else if (move === "x2") this.x2();
