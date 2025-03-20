@@ -569,25 +569,25 @@ export default class Cube {
     const l8 = this.stickers[44];
 
     // Update the stickers
-    // Front -> Left
-    this.stickers[42] = f6;
-    this.stickers[43] = f7;
-    this.stickers[44] = f8;
+    // Front -> Right
+    this.stickers[15] = f6;
+    this.stickers[16] = f7;
+    this.stickers[17] = f8;
 
-    // Right -> Front
-    this.stickers[24] = r6;
-    this.stickers[25] = r7;
-    this.stickers[26] = r8;
+    // Right -> Back
+    this.stickers[51] = r6;
+    this.stickers[52] = r7;
+    this.stickers[53] = r8;
 
-    // Back -> Right
-    this.stickers[15] = b6;
-    this.stickers[16] = b7;
-    this.stickers[17] = b8;
+    // Back -> Left
+    this.stickers[42] = b6;
+    this.stickers[43] = b7;
+    this.stickers[44] = b8;
 
-    // Left -> Back
-    this.stickers[51] = l6;
-    this.stickers[52] = l7;
-    this.stickers[53] = l8;
+    // Left -> Front
+    this.stickers[24] = l6;
+    this.stickers[25] = l7;
+    this.stickers[26] = l8;
   }
 
   Dp() {
@@ -612,25 +612,25 @@ export default class Cube {
     const l8 = this.stickers[44];
 
     // Update the stickers
-    // Front -> Right
-    this.stickers[15] = f6;
-    this.stickers[16] = f7;
-    this.stickers[17] = f8;
+    // Front -> Left
+    this.stickers[42] = f6;
+    this.stickers[43] = f7;
+    this.stickers[44] = f8;
 
-    // Right -> Back
-    this.stickers[51] = r6;
-    this.stickers[52] = r7;
-    this.stickers[53] = r8;
+    // Right -> Front
+    this.stickers[24] = r6;
+    this.stickers[25] = r7;
+    this.stickers[26] = r8;
 
-    // Back -> Left
-    this.stickers[42] = b6;
-    this.stickers[43] = b7;
-    this.stickers[44] = b8;
+    // Back -> Right
+    this.stickers[15] = b6;
+    this.stickers[16] = b7;
+    this.stickers[17] = b8;
 
-    // Left -> Front
-    this.stickers[24] = l6;
-    this.stickers[25] = l7;
-    this.stickers[26] = l8;
+    // Left -> Back
+    this.stickers[51] = l6;
+    this.stickers[52] = l7;
+    this.stickers[53] = l8;
   }
 
   D2() {
