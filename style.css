@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: white;
+  background-color: #f4f6f8;
 }
 
 .image-container {
@@ -21,6 +21,11 @@ body {
   max-width: 800px;
   width: 100%;
   height: auto;
+  border-radius: 8px;
+  box-shadow: 
+    0 4px 8px rgba(127, 143, 166, 0.2),     /* more noticeable main shadow */
+    0 12px 24px rgba(0, 188, 212, 0.15),    /* bigger pop of cyan */
+    0 2px 4px rgba(220, 225, 232, 0.8);     /* stronger inner shadow */
 }
 
 .image-container svg.overlay {
