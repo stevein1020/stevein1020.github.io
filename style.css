@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.image-container {
+  position: relative;  /* enables absolute positioning for overlay */
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.image-container img {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+}
+
+.image-container svg.overlay {
+  position: absolute;
+  top: 20px; /* match padding of .image-container */
+  left: 20px;
+  width: calc(100% - 40px); /* adjust for container padding */
+  height: calc(100% - 40px);
+  pointer-events: none; /* makes sure only the elements inside are clickable */
+}
+
+/* allow pointer events on the clickable <a> elements within the SVG */
+.image-container svg.overlay a {
+  pointer-events: auto;
+}
+
+.hover-path {
+  fill: transparent;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-path.beanbag:hover {
+  fill: rgba(255, 182, 193, 0.5);  /* light red/pink */
+}
+
+.hover-path.bed:hover {
+  fill: rgba(255, 200, 150, 0.5);  /* light orange */
+}
+
+.hover-path.chair:hover {
+  fill: rgba(173, 216, 230, 0.5);  /* light blue */
+}
+
+.hover-path.titanic:hover {
+  fill: rgba(230, 230, 250, 0.5);  /* light purple */
+}
