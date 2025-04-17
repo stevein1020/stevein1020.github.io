@@ -111,6 +111,10 @@ a:hover {
   fill: rgba(230, 230, 250, 0.5);  /* light purple */
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 1280px) {
   .container {
     flex-direction: column;
