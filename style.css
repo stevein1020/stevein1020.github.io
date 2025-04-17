@@ -111,6 +111,14 @@ a:hover {
   fill: rgba(230, 230, 250, 0.5);  /* light purple */
 }
 
+.hover-path.mushroom:hover {
+  fill: rgba(240, 128, 128, 0.5);  /* light coral */
+}
+
+.hover-path.pillow:hover {
+  fill: rgba(152, 251, 152, 0.5);  /* light green */
+}
+
 .hidden {
   display: none;
 }
