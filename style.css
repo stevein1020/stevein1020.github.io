@@ -119,6 +119,14 @@ a:hover {
   fill: rgba(152, 251, 152, 0.5);  /* light green */
 }
 
+.hover-path.monitor:hover {
+  fill: rgba(147, 112, 219, 0.5);  /* light purple */
+}
+
+.hover-path.cube:hover {
+  fill: rgba(255, 255, 0, 0.5);  /* light yellow */
+}
+
 .hidden {
   display: none;
 }
