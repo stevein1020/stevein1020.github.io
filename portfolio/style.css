@@ -52,6 +52,12 @@ a:hover {
   background-color: lightpink;
 }
 
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .image-container {
   position: relative;
   padding: 0;
