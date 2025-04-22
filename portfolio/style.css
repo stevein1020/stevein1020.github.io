@@ -137,51 +137,67 @@ nav ul {
 }
 
 .hover-path.beanbag:hover {
-  fill: rgba(255, 182, 193, 0.5);  /* light red/pink */
+  fill: rgba(255, 182, 193, 0.5);
 }
 
 .hover-path.bed:hover {
-  fill: rgba(255, 200, 150, 0.5);  /* light orange */
+  fill: rgba(255, 200, 150, 0.5);
 }
 
 .hover-path.chair:hover {
-  fill: rgba(173, 216, 230, 0.5);  /* light blue */
+  fill: rgba(173, 216, 230, 0.5);
 }
 
 .hover-path.titanic:hover {
-  fill: rgba(230, 230, 250, 0.5);  /* light purple */
+  fill: rgba(230, 230, 250, 0.5);
 }
 
 .hover-path.mushroom:hover {
-  fill: rgba(240, 128, 128, 0.5);  /* light coral */
+  fill: rgba(240, 128, 128, 0.5);
 }
 
 .hover-path.pillow:hover {
-  fill: rgba(152, 251, 152, 0.5);  /* light green */
+  fill: rgba(152, 251, 152, 0.5);
 }
 
 .hover-path.monitor:hover {
-  fill: rgba(147, 112, 219, 0.5);  /* light purple */
+  fill: rgba(147, 112, 219, 0.5);
 }
 
 .hover-path.cube:hover {
-  fill: rgba(255, 255, 0, 0.5);  /* light yellow */
+  fill: rgba(255, 255, 0, 0.5);
 }
 
 .hover-path.doorway:hover {
-  fill: rgba(255, 165, 0, 0.5);  /* light orange */
+  fill: rgba(255, 165, 0, 0.5);
 }
 
 .hover-path.headrest:hover {
-  fill: rgba(123, 104, 238, 0.5);  /* light purple/blue */
+  fill: rgba(123, 104, 238, 0.5);
 }
 
 .hover-path.wall:hover {
-  fill: rgba(135, 206, 235, 0.5);  /* light blue */
+  fill: rgba(135, 206, 235, 0.5);
 }
 
 .hidden {
   display: none;
+}
+
+.back-to-bedroom rect {
+  transition: fill 0.3s ease;
+}
+
+.back-to-bedroom:hover rect {
+  fill: rgba(255, 200, 200, 0.7);
+}
+
+.back-to-bedroom path {
+  transition: stroke 0.3s ease;
+}
+
+.back-to-bedroom:hover path {
+  stroke: #990000;
 }
 
 @media (max-width: 1280px) {

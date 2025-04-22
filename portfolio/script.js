@@ -15,27 +15,42 @@ function handleHashChange() {
   bedOverlay.classList.add("hidden");
   
   const hash = window.location.hash.substring(1);
+  const currentSrc = baseImage.src;
+  let targetSrc = "";
+  let targetAlt = "";
+  let targetOverlay = null;
   
   switch(hash) {
     case "beanbag":
-      baseImage.src = beanbagImageSrc;
-      baseImage.alt = "beanbag view";
-      beanbagOverlay.classList.remove("hidden");
+      targetSrc = beanbagImageSrc;
+      targetAlt = "beanbag view";
+      targetOverlay = beanbagOverlay;
       break;
     case "chair":
-      baseImage.src = chairImageSrc;
-      baseImage.alt = "chair view";
-      chairOverlay.classList.remove("hidden");
+      targetSrc = chairImageSrc;
+      targetAlt = "chair view";
+      targetOverlay = chairOverlay;
       break;
     case "bed":
-      baseImage.src = bedImageSrc;
-      baseImage.alt = "bed view";
-      bedOverlay.classList.remove("hidden");
+      targetSrc = bedImageSrc;
+      targetAlt = "bed view";
+      targetOverlay = bedOverlay;
       break;
     default:
-      baseImage.src = "portfolio/assets/portfolio-background.jpeg";
-      baseImage.alt = "my bedroom in The Chestnut";
-      bedroomOverlay.classList.remove("hidden");
+      targetSrc = "portfolio/assets/portfolio-background.jpeg";
+      targetAlt = "my bedroom in The Chestnut";
+      targetOverlay = bedroomOverlay;
+  }
+  
+  if (currentSrc.includes(targetSrc.split('/').pop())) {
+    targetOverlay.classList.remove("hidden");
+  } else {
+    baseImage.onload = function() {
+      targetOverlay.classList.remove("hidden");
+      baseImage.onload = null;
+    };
+    baseImage.src = targetSrc;
+    baseImage.alt = targetAlt;
   }
 }
 
