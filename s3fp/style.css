@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #120318; /* Dark purple background for a spooky theme */
+    font-family: 'Courier New', monospace; /* Pixel-style font */
+}
+.game-cabinet {
+    position: relative;
+    width: 1080px; /* Fixed width */
+    height: 1080px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1080px;
+    height: 1080px;
+    background-image: url('assets/arcade-frame.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    pointer-events: none;
+}
+.iframe-container {
+    width: 549px;
+    height: 480px;
+    overflow: hidden;
+    position: absolute;
+    top: 312px; /* Fixed position from top */
+    left: 243px; /* Fixed position from left */
+    z-index: 1;
+}
+iframe {
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    width: 820px;
+    height: 700px;
+    border: none;
+}
